@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="web, 200023151, 200024945">
+    <meta name="description" content="Atividades sobre JavaScript - DOM">
+    <meta name="author" content="Clovis Suarez Dantas, Wendel Campos Bezerra">
+    <title>JavaScript</title>
+
+    <script>
+        function calculaimc(){
+            peso=document.fmr1.peso.value;
+            altura=document.fmr1.altura.value;
+
+            imc = peso/(altura*altura);
+
+            document.write("seu imc é: " + imc);
+        }
+    </script>
+
+</head>
+<body>
+    <form name="fmr1">
+        peso: <input name="peso" type="number">
+        altura: <input name="altura" type="number">
+
+        <input type="submit" value="enviar" onclick="calculaimc()">
+    </form>
+</body>
+</html>

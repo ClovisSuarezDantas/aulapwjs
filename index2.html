@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="web, 200023151, 200024945">
+    <meta name="description" content="Atividades sobre JavaScript - DOM">
+    <meta name="author" content="Clovis Suarez Dantas, Wendel Campos Bezerra">
+    <title>Javascript</title>
+
+    <script>
+        function verifica(){
+            var usuario=document.frm1.usuario.value;
+            var senha=document.frm1.senha.value;
+            
+            if(usuario == "" || senha == ""){
+                alert('preencha o formulario')
+                
+                frm1.usuario.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <form name="frm1">
+       usuario: <input type="text" name="usuario">
+        senha: <input type="password"  name="senha">
+
+        <input type="submit" value="enviar" onclick="return verifica()">
+    </form>
+
+
+</body>
+</html>

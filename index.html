@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="web, 200023151, 200024945">
+    <meta name="description" content="Atividades sobre JavaScript - DOM">
+    <meta name="author" content="Clovis Suarez Dantas, Wendel Campos Bezerra">
+    <title>JavaScript</title>
+
+    <script>
+        function mostraDados() {
+
+            var idade = document.frm1.idade.value;
+            
+            if (idade > 2 & idade < 11) {
+                document.write("idade entre 3 e 10 anos");
+                document.write("<br>");
+            }
+
+            else if (idade > 10 & idade < 26) {
+                document.write("idade entre 11 e 25 anos");
+                document.write("<br>");
+            }
+
+            else if (idade > 35 & idade < 56) {
+                document.write("idade entre 36 e 55 anos");
+                document.write("<br>");
+            }
+
+            else if (idade > 55 & idade < 101) {
+                document.write("idade entre 56 e 100 anos");
+                document.write("<br>");
+            }
+            document.write(idade);
+        }
+    </script>
+</head>
+
+<body>
+
+    <form name="frm1">
+        idade: <input name="idade"> </p>
+
+        <input type="submit" value="Enviar" onclick="mostraDados()">
+
+    </form>
+
+</body>
+
+</html>
